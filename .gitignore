@@ -1,0 +1,8 @@
+lpr_env/
+venv/
+env/
+__pycache__/
+*.pt
+*.pth
+runs/
+dataset/
