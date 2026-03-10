@@ -1,8 +1,7 @@
-ultralytics
 fastapi
 uvicorn
-python-multipart
+ultralytics
+huggingface_hub
 opencv-python-headless
-pillow
 numpy
-requests
+python-multipart
