@@ -11,7 +11,12 @@ class LicensePlateDetector:
         if frame is None:
             return [], None
 
-        results = self.model(frame, verbose=False)
+        # resize ảnh để tránh timeout trên Render
+        frame = cv2.resize(frame, (640, 640))
+
+        # chạy model
+        results = self.model(frame, imgsz=640, conf=0.25, verbose=False)
+
         detections = []
 
         annotated_frame = results[0].plot() if draw else frame
