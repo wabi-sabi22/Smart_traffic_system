@@ -1,19 +1,9 @@
 from ultralytics import YOLO
-from huggingface_hub import hf_hub_download
 import cv2
 import numpy as np
 
-
 class LicensePlateDetector:
-
-    def __init__(self):
-        # Download model từ HuggingFace
-        model_path = hf_hub_download(
-            repo_id="nhu445/lpr-yolo11n",
-            filename="best.pt"
-        )
-
-        # Load model YOLO
+    def __init__(self, model_path: str):
         self.model = YOLO(model_path)
 
     def process_frame(self, frame, draw=False):
