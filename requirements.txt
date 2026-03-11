@@ -1,7 +1,5 @@
-fastapi
-uvicorn
 ultralytics
-huggingface_hub
+gradio
 opencv-python-headless
+huggingface_hub
 numpy
-python-multipart
