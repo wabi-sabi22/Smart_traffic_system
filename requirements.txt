@@ -1,5 +1,0 @@
-ultralytics
-gradio
-opencv-python-headless
-huggingface_hub
-numpy
